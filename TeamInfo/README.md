@@ -3,14 +3,17 @@
 ## Team Information
 
 ### Team Name
-*Replace this with your team name*
+
+_Utopia_
 
 ### Team Members
-1. *Member 1 Name (GitHub Username)*
-2. *Member 2 Name (GitHub Username)*
-3. *Member 3 Name (GitHub Username)*
+
+1. _Prashant Koirala (prashantkoirala465)_
+2. _Aaska Koirala (AaskaKoirala27)_
+3. _Aishmita Yonzan (xaishmitax)_
 
 ### Task Division
-- **Member 1**: *Describe tasks assigned (e.g., data analysis and EDA)*
-- **Member 2**: *Describe tasks assigned (e.g., Model validation and creation)*
-- **Member 3**: *Describe tasks assigned (e.g., application development and data tasks)*
+
+- **Member 1**: _Describe tasks assigned (e.g., data analysis and EDA)_
+- **Member 2**: _Describe tasks assigned (e.g., Model validation and creation)_
+- **Member 3**: _Describe tasks assigned (e.g., application development and data tasks)_
