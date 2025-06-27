@@ -1,297 +1,111 @@
-# 🎬 Movie Success Predictor
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Qfg2XI5Y)
+# Data 200 Applied Statistical Analysis  
+## Project Work  
+**"Exploring Real-World Data through Statistical and Predictive Modeling"**
 
-A sophisticated machine learning-powered web application that predicts whether a movie will be a hit or a flop. This interactive quiz game lets users test their intuition against a trained ML model while learning about the factors that contribute to a movie's success.
+---
 
-<div align="center">
-  <img src="./docs/preview.png" alt="Movie Success Predictor Preview" width="800"/>
-  
-  [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
-  [![React](https://img.shields.io/badge/React-18.0%2B-blue)](https://reactjs.org/)
-  [![TypeScript](https://img.shields.io/badge/TypeScript-5.0%2B-blue)](https://www.typescriptlang.org/)
-  [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-</div>
+## 🚀 Project Overview
 
-## 📚 Table of Contents
-- [Overview](#-overview)
-- [Features](#-features)
-- [Technical Architecture](#-technical-architecture)
-- [Machine Learning Model](#-machine-learning-model)
-- [Data Collection & Processing](#-data-collection--processing)
-- [Installation & Setup](#-installation--setup)
-- [API Reference](#-api-reference)
-- [Project Structure](#-project-structure)
-- [Contributing](#-contributing)
-- [Team](#-team)
-- [License](#-license)
-- [Acknowledgments](#-acknowledgments)
+This repository contains the ongoing work for our DATA 200 Applied Statistical Analysis project. The primary objective is to apply statistical and predictive modeling techniques to a real-world dataset to extract meaningful insights and develop a simple end-to-end application. As of Week 4, we have completed initial data acquisition, comprehensive data cleaning, exploratory data analysis, and selection of statistical models.
 
-## 🌟 Overview
+---
 
-The Movie Success Predictor combines data science with an engaging user interface to create an educational game about movie success prediction. Users can:
-- Guess whether a movie was a hit or flop based on its details
-- Compare their predictions with a machine learning model
-- Learn about the factors that influence movie success
-- Filter movies by genre, country, and rating
-- Track their prediction accuracy
+## 👥 Team Information
 
-## ✨ Features
+### Team Name
+Utopia
 
-### 🎮 Interactive Quiz Interface
-- Beautiful, responsive movie cards with TMDB posters
-- Real-time feedback on user predictions
-- Visual effects for correct/incorrect guesses
-- Timer-based gameplay for added challenge
-- Score tracking and statistics
+### Team Members
+1.  **Prashant Koirala** ([@prashantkoirala465](https://github.com/prashantkoirala465))
+2.  **Aaska Koirala** ([@AaskaKoirala27](https://github.com/AaskaKoirala27))
+3.  **Aishmita Yonzan** ([@xaishmitax](https://github.com/xaishmitax))
 
-### 🎯 Filtering & Customization
-- Filter movies by:
-  - Genre
-  - Country of origin
-  - MPAA rating (certification)
-- Adjustable game settings
-- Premium UI with animations and transitions
+### Task Division (Up to Week 4 Progress)
+*   **Prashant Koirala**: Data Collection, Initial Data Cleaning and Preprocessing, Feature Engineering (e.g., 'year', 'success' columns, genre/country extraction).
+*   **Aaska Koirala**: Exploratory Data Analysis (EDA) focusing on data patterns, relationships, handling missing values, outliers, and duplicates, and initial model selection.
+*   **Aishmita Yonzan**: Project Proposal and Mid-Defense Presentation preparation, documentation support, and ongoing data quality checks.
 
-### 📊 Machine Learning Integration
-- Real-time predictions using Logistic Regression
-- Model confidence scores
-- Comparison between user and model predictions
-- Educational insights into prediction factors
+---
 
-## 🏗 Technical Architecture
+## 📊 Dataset
 
-### Frontend (React + TypeScript + Vite)
-- Modern React with TypeScript for type safety
-- Vite for fast development and building
-- Tailwind CSS for responsive styling
-- Custom hooks for state management
-- Component-based architecture
+**Name**: `moviesDb.csv`
+**Source**: This dataset is derived from the `tmdb_5000_movies.csv` dataset, originally retrieved from Kaggle.
+**Description**: The dataset contains various attributes of movies, including budget, revenue, runtime, genre, country, release date, and vote counts. It has been preprocessed to ensure data quality and suitability for statistical modeling, with additional features like 'year' and 'success' added during the cleaning phase.
 
-### Backend (Python + Flask)
-- Flask REST API
-- CORS support for local development
-- Environment-based configuration
-- Scikit-learn for ML predictions
-- TMDB API integration for movie posters
+---
 
-### Machine Learning Pipeline
-- Data collection via TMDB API
-- Preprocessing and feature engineering
-- Model training and evaluation
-- Real-time prediction serving
+## ⏰ Project Deliverables and Progress (Up to Week 4)
 
-## 🤖 Machine Learning Model
+We have diligently followed the project timeline and achieved the following milestones:
 
-### Data Features
-- Budget
-- Runtime
-- Release Year
-- Vote Average
-- Vote Count
-- Certification (MPAA Rating)
-- Genre
-- Country
+### **Week 1: Group Formation and Topic Finalization**
+*   Formed our project group and finalized the topic: "Exploring Real-World Data through Statistical and Predictive Modeling" with a focus on movie data.
+*   Identified the problem statement related to movie success prediction and analysis.
 
-### Model Details
-- Algorithm: Logistic Regression
-- Accuracy: 70.47%
-- Features: One-hot encoded categorical variables
-- Training Data: 375,377 movies
+**Deliverables:**
+*   **Project Idea Presentation**: Our initial proposal outlining the project scope and objectives.
+    *   [`project-idea-presentation/Project-Proposal-Presentation.pdf`](project-idea-presentation/Project-Proposal-Presentation.pdf)
 
-### Success Definition
-A movie is considered successful (Hit) if:
-- Revenue >= Budget × 2
-- Otherwise classified as a Flop
+### **Week 2: Literature Review and Dataset Selection**
+*   Conducted a literature review to establish context and relevance for movie data analysis.
+*   Selected the `tmdb_5000_movies.csv` dataset from Kaggle, which is then processed into `moviesDb.csv`.
 
-## 📊 Data Collection & Processing
+**Deliverables:**
+*   Submission of at least 3 literature reviews of related works (integrated into project understanding).
 
-### Data Collection (`scrape-movies.py`)
-- Uses TMDB API for movie data
-- Collects movies from 1873 to 2020
-- Features include:
-  - Basic movie information
-  - Financial data (budget/revenue)
-  - Ratings and popularity
-  - Production details
+### **Week 3: Exploratory Data Analysis (EDA) & Data Preprocessing**
+*   Performed extensive Exploratory Data Analysis (EDA) using descriptive statistics and visualizations. The code for this EDA, covering various visualizations and analysis steps as planned for Week 3, is available in `eda_analysis.py` or `visualization.ipynb` file.
+*   **Data Preprocessing**: Implemented robust data cleaning techniques as detailed in `data_cleaning.py`. This included:
+    *   Dropping duplicate entries.
+    *   Removing unusable entries based on `runtime`, `revenue`, `budget`, `adult`, `year`, and `vote_count` criteria.
+    *   Handling missing values by replacing null `certification_US` with 'NR' and null `genre` with 'None'.
+    *   Creating a `year` column from `release_date`.
+    *   Generating a `success` column (True if `revenue >= budget * 2`, False otherwise).
+    *   Extracting the first `genre` and `country` from their respective lists.
+    *   Filtering out countries with low frequency to ensure data quality.
+    *   Sorting data by `release_date`.
+    *   Removing redundant features like `original_title`, `release_date`, `adult`, `popularity`, `genres`, `status`, `production_companies`, and `production_countries`.
 
-### Preprocessing (`preprocessing.py`)
-1. Data Cleaning
-   - Removes duplicates
-   - Handles missing values
-   - Filters invalid entries
+**Deliverables:**
+*   EDA code script: [`eda_script.py`](eda_script.py) (Code for EDA, ready for notebook integration).
+*   Cleaned dataset: [`moviesDb.csv`](moviesDb.csv) generated by [`data_cleaning.py`](data_cleaning.py).
 
-2. Feature Engineering
-   - Creates success column
-   - Extracts primary genre
-   - Processes release dates
-   - Standardizes country information
+### **Week 4: Statistical Model Selection and Detailed Hypothesis Testing**
+*   Selected appropriate statistical techniques based on the project problem statement (e.g., Hypothesis testing, Regression for predictive modeling).
+*   Developed and conducted detailed hypothesis tests regarding factors influencing movie success using `hypothesis_testing.py`. These tests include explicit null and alternative hypotheses, assumptions, test statistics, p-values, effect sizes (Cohen's d, Cramer's V), and detailed interpretations for the following relationships:
+    *   Budget vs. Success
+    *   Genre vs. Success (Top 15 Genres)
+    *   Vote Average vs. Success
+    *   Runtime vs. Success
+    *   Vote Count vs. Success
+    *   Certification (US) vs. Success
+    *   Country vs. Success (Top 10 Countries)
+*   Prepared the Mid-Defense Presentation.
 
-### Model Training (`classification.py`)
-- Implements multiple algorithms:
-  - Logistic Regression
-  - KNN
-  - Decision Trees
-  - Random Forest
-- Cross-validation for model selection
-- Hyperparameter tuning
-- Performance visualization
+**Deliverables:**
+*   Detailed Hypothesis Testing script: [`hypothesis_testing.py`](hypothesis_testing.py)
+*   **Mid-Defense Presentation**: A slide deck justifying our model and feature choices.
+    *   [`project-idea-presentation/Mid-Defense-Presentation.pdf`](project-idea-presentation/Mid-Defense-Presentation.pdf)
 
-## 🚀 Installation & Setup
+---
 
-### Prerequisites
-- Python 3.9+
-- Node.js 16+
-- TMDB API Key
+## 📈 Future Work (Beyond Week 4)
 
-### Backend Setup
-```bash
-# Clone the repository
-git clone https://github.com/prashantkoirala465/Movie-Success-Predictor.git
-cd Movie-Success-Predictor
+*   **Week 5: Statistical Analysis and Validation (Continued)**: Continue with further inferential statistical analysis, perform diagnostics on models, refine interpretations, and validate hypotheses more rigorously. Explore regression modeling.
+*   **Week 6: Statistical Modeling (Regression) & Report Compilation**: Build regression models for predictive analysis, finalize insights from all statistical analyses, and begin compiling the comprehensive project report.
+*   **Week 7: Application Development**: Create a simple Python application for project demonstration.
+*   **Week 8: Peer Evaluation and Final Presentation**: Conduct peer evaluations, prepare and present final findings, and submit the final report.
 
-# Set up Python virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\\Scripts\\activate
+---
 
-# Install dependencies
-pip install -r requirements.txt
+## 📏 Evaluation Criteria
 
-# Set up environment variables
-cp .env.example .env
-# Edit .env and add your TMDB_API_KEY
+*   **Dataset and Problem Definition (10%)**
+*   **Exploratory Data Analysis and Preprocessing (20%)**
+*   **Statistical Modeling and Validation (40%)**
+*   **Python Application Development (10%)**
+*   **Presentation and Collaboration (20%)**
 
-# Start the backend server
-cd backend
-python app.py
-```
-
-### Frontend Setup
-```bash
-# Navigate to frontend directory
-cd frontend-quiz-app
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-## 📡 API Reference
-
-### GET /api/quiz/next-movie
-Retrieves a random movie for prediction.
-
-Query Parameters:
-- `genre`: Filter by movie genre
-- `country`: Filter by production country
-- `certification`: Filter by MPAA rating
-
-Response:
-```json
-{
-  "id": "string",
-  "title": "string",
-  "posterUrl": "string"
-}
-```
-
-### POST /api/quiz/submit-guess
-Submit a prediction for a movie.
-
-Request Body:
-```json
-{
-  "movieId": "string",
-  "guess": "Hit" | "Flop"
-}
-```
-
-Response:
-```json
-{
-  "movieId": "string",
-  "userGuess": "string",
-  "prediction": "string",
-  "actualResult": "string",
-  "isCorrect": boolean,
-  "feedbackMessage": "string"
-}
-```
-
-### GET /api/quiz/filter-options
-Get available filter options.
-
-Response:
-```json
-{
-  "genres": ["string"],
-  "countries": ["string"],
-  "certifications": ["string"]
-}
-```
-
-## 📁 Project Structure
-
-```plaintext
-Movie-Success-Predictor/
-├── backend/                   # Python Flask backend
-│   ├── app.py                # Main Flask application
-│   ├── train_model.py        # Model training script
-│   ├── data/                 # Dataset storage
-│   │   └── moviesDb.csv     # Processed movie dataset
-│   └── models/              # Trained ML models
-│       ├── logistic_regression_model.joblib
-│       └── model_columns.joblib
-├── frontend-quiz-app/        # React frontend
-│   ├── src/
-│   │   ├── components/      # Reusable React components
-│   │   │   ├── MovieCard.tsx
-│   │   │   ├── QuizControls.tsx
-│   │   │   └── ...
-│   │   ├── pages/          # Page components
-│   │   ├── services/       # API services
-│   │   ├── hooks/         # Custom React hooks
-│   │   └── assets/        # Static assets
-│   └── public/             # Public assets
-├── data-collection/         # Data collection scripts
-│   ├── scrape-movies.py    # TMDB data scraper
-│   └── preprocessing.py    # Data preprocessing
-├── ml/                     # Machine learning
-│   └── classification.py   # Model training
-├── docs/                   # Documentation
-│   └── preview.png        # Project preview
-├── .env.example           # Example environment variables
-├── requirements.txt       # Python dependencies
-├── .gitignore            # Git ignore rules
-└── README.md             # Project documentation
-```
-
-## 🤝 Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Make your changes
-4. Run tests and linting
-5. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-6. Push to the branch (`git push origin feature/AmazingFeature`)
-7. Open a Pull Request
-
-## 👥 Team
-
-- Prashant Koirala - Project Lead & Full Stack Developer
-- Aaska Koirala - Machine Learning Engineer
-- Aishmita Yonzan - UI/UX Designer
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [TMDB API](https://www.themoviedb.org/documentation/api) for movie data
-- [Scikit-learn](https://scikit-learn.org/) for machine learning tools
-- [React](https://reactjs.org/) and [Vite](https://vitejs.dev/) communities
-- [Tailwind CSS](https://tailwindcss.com/) for styling
-- All contributors and testers
+---
